@@ -222,12 +222,18 @@
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     margin-top: 20px;
+    text-decoration: none;
+    /* For anchor tag */
+    display: inline-block;
+    /* For anchor tag */
 }
 
 .buy-now-btn:hover {
     background-color: #0d00ff;
     transform: scale(1.05);
 }
+
+
 
 @media (max-width: 600px) {
     .modal-body {

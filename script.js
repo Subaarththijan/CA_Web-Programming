@@ -3,7 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const [mImg, mName, mPrice, mDesc] = ['img', 'name', 'price', 'description'].map(id => document.getElementById(`modal-${id}`));
 
     document.body.addEventListener('click', (e) => {
-        const card = e.target.closest('.product-card');
+        const target = e.target;
+
+        // Don't open modal if the modal's Buy Now button is clicked
+        if (target.closest('.buy-now-btn')) return;
+
+        const card = target.closest('.product-card');
         if (card) {
             mName.innerText = card.querySelector('h3').innerText;
             mPrice.innerText = card.querySelector('.price').innerText;
@@ -11,11 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mDesc.innerText = card.dataset.description || "No description available.";
             modal.style.display = 'block';
             document.body.style.overflow = 'hidden';
-        } else if (e.target.closest('.buy-now-btn')) {
-            // BUYNOW page should came here
-            //window.location.href = 'buynow.html';
-            console.log("Redirecting to Buy Now page...");
-        } else if (e.target.closest('.close-button') || e.target === modal) {
+        } else if (target.closest('.close-button') || target === modal) {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
