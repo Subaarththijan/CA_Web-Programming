@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('click', (e) => {
         const target = e.target;
 
-        // Don't open modal if the modal's Buy Now button is clicked
         if (target.closest('.buy-now-btn')) return;
 
         const card = target.closest('.product-card');
