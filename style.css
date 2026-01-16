@@ -1,4 +1,4 @@
-.page-body {
+.body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     margin: 0;
@@ -16,7 +16,7 @@
     padding: 20px;
 }
 
-.main-tagline {
+.tagline {
     text-align: center;
     font-size: 32px;
     margin: 40px 0;
@@ -25,14 +25,14 @@
     font-weight: bold;
 }
 
-.brand-section {
+.brand {
     margin: 20px;
     padding: 20px;
     background-color: white;
     border: 1px solid #ccc;
 }
 
-.brand-title {
+.title {
     color: #333;
     font-size: 24px;
     border-bottom: 2px solid #333;
@@ -40,7 +40,7 @@
     margin-bottom: 20px;
 }
 
-.product-grid {
+.grid {
     display: grid;
     background-color: #dedede;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -50,11 +50,11 @@
     margin: 0;
 }
 
-.product-card h3 {
+.card h3 {
     margin-top: 15px;
 }
 
-.product-card {
+.card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -68,14 +68,14 @@
 }
 
 /* Hover effect for product cards */
-.product-card:hover {
+.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(2, 1, 1, 0.15);
     color: crimson;
 }
 
 /* Added for transition */
-.product-img {
+.img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
@@ -83,7 +83,7 @@
     transition: transform 0.3s ease;
 }
 
-.product-info {
+.info {
     margin-top: 10px;
 }
 
@@ -94,7 +94,7 @@
     margin: 10px 0;
 }
 
-.product-desc {
+.desc {
     color: #555;
     font-size: 14px;
     line-height: 1.4;
@@ -103,7 +103,7 @@
 }
 
 
-.buy-now-btn {
+.btn {
     background-color: #000;
     color: white;
     padding: 12px 25px;
@@ -119,9 +119,7 @@
     width: 80%;
 }
 
-.buy-now-btn:hover {
+.btn:hover {
     background-color: #333;
     transform: scale(1.05);
 }
-
-
